@@ -1,11 +1,7 @@
 import math
 import pygame
-import random
 
 
-<<<<<<< Updated upstream
-
-=======
 color_inactive = pygame.Color('lightskyblue3')
 color_active = pygame.Color('dodgerblue2')
 veg = pygame.image.load("Vegeta.png")
@@ -14,43 +10,24 @@ back = pygame.image.load("Possible_background.jpg")
 def main():
     pygame.init()
     gameDisplay = pygame.display.set_mode((1000,600))
->>>>>>> Stashed changes
 
-pygame.init()
+    while True:
+        ev = pygame.event.poll()
+        if ev.type == pygame.QUIT:
+            break
 
+        gameDisplay.fill((255, 255, 255))
 
-gameDisplay = pygame.display.set_mode((1000,600))
+        gameDisplay.blit(back, (0, 0))
 
+        gameDisplay.blit(goku, (150, 480))
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-def hitMissText():
-    font = pygame.font.SysFont("comicsansms", 72)
-    textHit = font.render("You hit!", False, (84, 194, 45))
-    textMiss = font.render("You missed!", False, (163, 41, 33))
-    
-def asdasd():
-    if textHit == True:
-        screen.blit(textHit, (display_x/2, display_y/2))
-    if textMiss == True:
-        screen.blit(textMiss, (display_x/2, display_y/2))
-        
-rand = (random.randrange(1, 3))
-if rand == 1:
-    textHit = True
-    textMiss = False
-    asdasd()
-if rand == 2:
-    textHit = False
-    textMiss = True
-    asdasd()
->>>>>>> Stashed changes
-=======
         gameDisplay.blit(veg, (750, 480))
 
         pygame.display.flip()
 
+    color_inactive = pygame.Color('lightskyblue3')
+    color_active = pygame.Color('dodgerblue2')
     font = pygame.font.Font(None, 32)
     clock = pygame.time.Clock()
     input_box = pygame.Rect(100, 100, 140, 32)
@@ -107,4 +84,3 @@ if __name__ == '__main__':
 
 
 main()
->>>>>>> Stashed changes
