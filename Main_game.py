@@ -6,7 +6,7 @@ color_inactive = pygame.Color('lightskyblue3')
 color_active = pygame.Color('dodgerblue2')
 veg = pygame.image.load("Vegeta.png")
 goku = pygame.image.load("Goku.png")
-back = pygame.image.load("Possible_background.jpg")
+back = pygame.image.load("PossibleBackground.jpg")
 def main():
     pygame.init()
     gameDisplay = pygame.display.set_mode((1000,600))
